@@ -4,6 +4,8 @@ import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
+import java.util.Scanner;
+
 public class Game {
     private final Area[] areas;
     private final Input input;
