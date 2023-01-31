@@ -1,23 +1,45 @@
 package com.codecool.mightytextadventure;
 
 import com.codecool.mightytextadventure.data.Area;
+import com.codecool.mightytextadventure.data.Player;
 import com.codecool.mightytextadventure.logic.Game;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Application {
     public static void main(String[] args) {
         Display display = new Display();
         Input input = new Input();
 
+
+        // TEST Player
+        String[] inventory = new String[2];
+        inventory[0] = "";
+        inventory[1] = "";
+
+        Player player = new Player("Test_Name", "Test_Location", inventory);
+
+        player.setInventory("ID-Card");
+        player.setInventory("Key");
+
+        System.out.println(Arrays.toString(player.getInventory()));
+
         display.printMessage("Starting Mighty Text Adventure!");
 
         Area[] areas = loadAreas();
 
         Game game = new Game(areas, input, display);
+
         game.run();
 
         display.printMessage("Exiting from Mighty Text Adventure!");
+
+
+
+
     }
 
     private static Area[] loadAreas(){
