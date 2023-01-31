@@ -27,9 +27,9 @@ public class Application {
         areas[1] = new Area(AreaEnum.ROOM1);
         areas[2] = new Area(AreaEnum.ROOM2);
         areas[3] = new Area(AreaEnum.ROOM3);
-//        areas[4] = new Area("Room 4");
-//        areas[5] = new Area("Room 5");
-//        areas[6] = new Area("Room 6");
+//        areas[4] = new Area(AreaEnum.ROOM4);
+//        areas[5] = new Area(AreaEnum.ROOM5);
+//        areas[6] = new Area(AreaEnum.ROOM6);
         return areas;
     }
 }
