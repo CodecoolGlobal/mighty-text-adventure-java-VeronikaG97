@@ -6,6 +6,9 @@ import com.codecool.mightytextadventure.logic.Game;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
         Display display = new Display();
@@ -13,19 +16,16 @@ public class Application {
 
 
         // TEST Player
-        String[] arrInventory = new String[3];
-        arrInventory[0] = "ID-Card";
-        arrInventory[1] = "Key";
-        arrInventory[2] = "Code: 1234";
+        String[] inventory = new String[2];
+        inventory[0] = "";
+        inventory[1] = "";
 
+        Player player = new Player("Test_Name", "Test_Location", inventory);
 
-        Player player = new Player("Test_Name", "Test_Location", arrInventory);
-        player.setInventory("Test2");
-        player.setInventory("Hellooooo");
-        System.out.println(player.getInventory());
-        System.out.println(arrInventory[0]);
-        System.out.println(arrInventory[1]);
-        System.out.println(arrInventory[2]);
+        player.setInventory("ID-Card");
+        player.setInventory("Key");
+
+        System.out.println(Arrays.toString(player.getInventory()));
 
         display.printMessage("Starting Mighty Text Adventure!");
 

@@ -10,7 +10,7 @@ public class Player {
     public Player(String name, String location, String[] inventory){
        this.name = name;
        this.location = location;
-       this.inventory = inventory;
+       this.inventory = new String[2];
     }
 
     public void setName(String newName) {
@@ -23,8 +23,9 @@ public class Player {
 
     public void setInventory(String item) {
         for (int i = 0; i < inventory.length; i++){
-            if (this.inventory[i] == " ") {
+            if (this.inventory[i] == null) {
                 this.inventory[i] = item;
+                break;
             }
         }
     }
