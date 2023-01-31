@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class Input {
 
+    Scanner scanner = new Scanner(System.in);
     public String getInputFromUser(){
-        return "";
+
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        return input;
     }
 
 }

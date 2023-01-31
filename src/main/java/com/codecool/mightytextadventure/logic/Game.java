@@ -18,12 +18,13 @@ public class Game {
     public void run() {
         boolean isRunning = true;
         while (isRunning) {
-            isRunning = step();
+            isRunning = step(); // if (winCon || loseCon) { isRunning =false}
         }
     }
 
     private boolean step() {
         display.printMessage("Steps");
+        input.getInputFromUser();
         return true;
     }
 }
