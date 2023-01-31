@@ -20,14 +20,13 @@ public class Game {
     public void run() {
         boolean isRunning = true;
         while (isRunning) {
-            isRunning = step();
+            isRunning = step(); // if (winCon || loseCon) { isRunning =false}
         }
     }
 
     private boolean step() {
         display.printMessage("Steps");
-        Scanner scanner = new Scanner(System.in);
-        scanner.next();
+        input.getInputFromUser();
         return true;
     }
 }
