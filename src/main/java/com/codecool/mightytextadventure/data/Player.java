@@ -1,7 +1,5 @@
 package com.codecool.mightytextadventure.data;
 
-import java.lang.reflect.Array;
-
 public class Player {
     String name;
     String location;
@@ -17,8 +15,8 @@ public class Player {
         this.name = newName;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocation(String newLocation) {
+        this.location = newLocation;
     }
 
     public void setInventory(String item) {

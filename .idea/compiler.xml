@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mighty-text-adventure" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mighty-text-adventure" target="17" />
+      <module name="mighty-text-adventure-java-VeronikaG97" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

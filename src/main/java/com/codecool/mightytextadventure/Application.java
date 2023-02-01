@@ -7,7 +7,6 @@ import com.codecool.mightytextadventure.logic.Game;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Application {
@@ -45,13 +44,13 @@ public class Application {
 
     private static Area[] loadAreas(){
         Area[] areas =   new Area[7];
-        areas[0] = new Area(AreaEnum.ROOM0);
-        areas[1] = new Area(AreaEnum.ROOM1);
-        areas[2] = new Area(AreaEnum.ROOM2);
-        areas[3] = new Area(AreaEnum.ROOM3);
-//        areas[4] = new Area(AreaEnum.ROOM4);
-//        areas[5] = new Area(AreaEnum.ROOM5);
-//        areas[6] = new Area(AreaEnum.ROOM6);
+        areas[0] = new Area("Room 0", "You wake up and are in a Room");
+        areas[1] = new Area("Room 1", "Welcome to Room 1.");
+        areas[2] = new Area("Room 2", "Welcome to Room 2.");
+        areas[3] = new Area("Room 3", "Welcome to Room 3.");
+        areas[4] = new Area("Room 4", "Welcome to Room 4.");
+        areas[5] = new Area("Room 5", "Welcome to Room 5.");
+        areas[6] = new Area("Room 6", "Welcome to Room 6.");
         return areas;
     }
 }

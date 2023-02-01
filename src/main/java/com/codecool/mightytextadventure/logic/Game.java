@@ -4,7 +4,6 @@ import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
-import java.util.Scanner;
 
 public class Game {
     private final Area[] areas;
@@ -17,6 +16,9 @@ public class Game {
         this.display = display;
     }
 
+
+
+
     public void run() {
         boolean isRunning = true;
         while (isRunning) {
@@ -25,8 +27,21 @@ public class Game {
     }
 
     private boolean step() {
-        display.printMessage("Steps");
-        input.getInputFromUser();
+
+        String userInput = input.getInputFromUser();
+
+
+        for(int i = 0; i< areas.length; i++){
+            if (userInput.equals("Go " + areas[i].getName())){
+
+
+                display.printMessage(areas[i].getScene());
+                break;
+            }
+        }
+
+
+
         return true;
     }
 }
