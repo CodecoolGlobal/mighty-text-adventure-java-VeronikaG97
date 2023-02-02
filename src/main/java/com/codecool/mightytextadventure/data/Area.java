@@ -7,12 +7,9 @@ public class Area {
     private String name;
     private String scene;
 
-    private String[] items;
-
-    public Area(String name, String scene, String[] items) {
+    public Area(String name, String scene) {
         this.name = name;
         this.scene = scene;
-        this.items = items;
     }
 
     public String getName() {
