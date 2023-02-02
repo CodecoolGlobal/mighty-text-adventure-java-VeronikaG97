@@ -35,6 +35,7 @@ public class Game {
     }
 
     private boolean step() {
+
         String playerLocation = player.getLocation();
 
         if(playerLocation.equals("Intro")){
@@ -46,10 +47,12 @@ public class Game {
         String keyword = userInput.substring(0, userInput.indexOf(" "));
         String target = userInput.substring(userInput.indexOf((" ")));
 
+
+
         if(keyword.equalsIgnoreCase("Examine") && target.equalsIgnoreCase(" Room")){
             for(int i = 0; i < areas.length; i++){
                 if(areas[i].getName().equals(playerLocation)){
-                    display.printMessage(areas[1].getScene());
+                    display.printMessage(areas[i].getScene());
                 }
             }
         } else if (keyword.equalsIgnoreCase("Examine")) {
@@ -79,6 +82,7 @@ public class Game {
                 break;
             }
             else if (userInput.equalsIgnoreCase("Go " + areaName) && !(playerLocation.equals(areaName)) ){
+                player.setLocation(areaName);
                 display.printMessage(areaScene);
                 break;
             }

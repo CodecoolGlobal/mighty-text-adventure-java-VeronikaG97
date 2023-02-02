@@ -1,5 +1,6 @@
 package com.codecool.mightytextadventure.data;
 
+import com.codecool.mightytextadventure.storyline.Room;
 
 public class Area {
 
