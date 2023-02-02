@@ -2,9 +2,14 @@ package com.codecool.mightytextadventure.data;
 
 public class SubArea {
 
-    public SubArea(String name, String scene) {
+    private String name;
+    private String scene;
+    private String location;
+
+    public SubArea(String name, String scene, String location) {
         this.name = name;
         this.scene = scene;
+        this.location = location;
     }
 
     public String getName() {
@@ -15,6 +20,6 @@ public class SubArea {
         return scene;
     }
 
-    private String name;
-    private String scene;
+    public String getLocation() { return location; }
+
 }

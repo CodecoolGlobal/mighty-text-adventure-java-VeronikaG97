@@ -55,14 +55,14 @@ public class Game {
         } else if (keyword.equalsIgnoreCase("Examine")) {
             if(target.equalsIgnoreCase(" "+"testSub1")) {
                 for (int i = 0; i < subAreas.length; i++){
-                    if(subAreas[i].getName().equalsIgnoreCase("testSub1")){
+                    if(subAreas[i].getName().equalsIgnoreCase("testSub1") && playerLocation.equalsIgnoreCase(subAreas[i].getLocation())){
                         display.printMessage(subAreas[i].getScene());
                     }
                 }
             }
             else if(target.equalsIgnoreCase(" "+"testSub2")) {
                 for (int i = 0; i < subAreas.length; i++){
-                    if(subAreas[i].getName().equalsIgnoreCase("testSub2")){
+                    if(subAreas[i].getName().equalsIgnoreCase("testSub2") && playerLocation.equalsIgnoreCase(subAreas[i].getLocation())){
                         display.printMessage(subAreas[i].getScene());
                     }
                 }
