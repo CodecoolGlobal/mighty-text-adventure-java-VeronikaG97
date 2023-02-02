@@ -26,13 +26,13 @@ public class LogicProvider {
     }
 
     public boolean isThingInRoom(String thing){
-        boolean result = false;
+        boolean itIs = false;
         for(int i = 0; i < subAreas.length; i++){
             if(playerLocation.equalsIgnoreCase(subAreas[i].getLocation()) && thing.equalsIgnoreCase(subAreas[i].getName())){
-                result = true;
+                itIs = true;
             }
         }
-        return result;
+        return itIs;
     }
 }
 

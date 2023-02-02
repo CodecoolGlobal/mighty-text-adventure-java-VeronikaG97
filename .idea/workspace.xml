@@ -7,8 +7,14 @@
     <list default="true" id="0cef0a1c-a635-4473-97f7-69b6eb5d47f2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/service/LogicProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

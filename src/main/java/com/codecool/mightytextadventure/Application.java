@@ -4,6 +4,7 @@ import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.data.Player;
 import com.codecool.mightytextadventure.data.SubArea;
 import com.codecool.mightytextadventure.logic.Game;
+import com.codecool.mightytextadventure.storyline.Room;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Application {
+
     public static void main(String[] args) {
         Display display = new Display();
         Input input = new Input();
@@ -43,13 +45,23 @@ public class Application {
 
     private static Area[] loadAreas(){
         Area[] areas =   new Area[7];
-        areas[0] = new Area("Intro", "You wake up and are in a Room -it smells weird", new String[]{null});
-        areas[1] = new Area("Room 1", "Welcome to Room 1. you see two oblong things on the floor, testSub1 and testSub2", new String[]{"testSub1", "testSub2"});
-        areas[2] = new Area("Room 2", "Welcome to Room 2.", new String[]{null});
-        areas[3] = new Area("Room 3", "Welcome to Room 3.", new String[]{null});
+
+        Room description0 = Room.ROOM0;
+        Room description1 = Room.ROOM1;
+        Room description2 = Room.ROOM2;
+        Room description3 = Room.ROOM3;
+
+
+        areas[0] = new Area("Intro", description0.getDescription(), new String[]{null});
+        areas[1] = new Area("Room 1", description1.getDescription(), new String[]{"testSub1", "testSub2"});
+        areas[2] = new Area("Room 2", description2.getDescription(), new String[]{null});
+        areas[3] = new Area("Room 3", description3.getDescription(), new String[]{null});
+
+        /*
         areas[4] = new Area("Room 4", "Welcome to Room 4.", new String[]{null});
         areas[5] = new Area("Room 5", "Welcome to Room 5.", new String[]{null});
         areas[6] = new Area("Room 6", "Welcome to Room 6.", new String[]{null});
+        */
         return areas;
     }
     private static SubArea[] loadSubAreas(){
