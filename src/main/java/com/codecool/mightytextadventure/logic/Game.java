@@ -2,6 +2,7 @@ package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.data.SubArea;
+import com.codecool.mightytextadventure.service.LogicProvider;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 import com.codecool.mightytextadventure.data.Player;
@@ -35,7 +36,9 @@ public class Game {
     }
 
     private boolean step() {
+
         String playerLocation = player.getLocation();
+
 
         if(playerLocation.equals("Intro")){
             display.printMessage(areas[0].getScene());
@@ -45,6 +48,10 @@ public class Game {
         String userInput = input.getInputFromUser();
         String keyword = userInput.substring(0, userInput.indexOf(" "));
         String target = userInput.substring(userInput.indexOf((" ")));
+
+        LogicProvider logic = new LogicProvider(playerLocation, areas, subAreas);
+
+        display.printMessage(String.valueOf(logic.getAreaIndex()));
 
         if(keyword.equalsIgnoreCase("Examine") && target.equalsIgnoreCase(" Room")){
             for(int i = 0; i < areas.length; i++){
