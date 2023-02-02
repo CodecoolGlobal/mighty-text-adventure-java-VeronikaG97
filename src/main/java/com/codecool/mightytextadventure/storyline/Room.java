@@ -1,12 +1,11 @@
 package com.codecool.mightytextadventure.storyline;
 public enum Room {
-    ROOM0("INTRO"),
-    ROOM1("You are really, really tired, but your head hurts. It hurts as if someone hit you with an old rusty baseball bat. The loud noise around you doesn't help. " +
-            "\n There is a moment, while you force yourself to open your eyes, where you wonder about your metaphors. There is a red light. " +
-            "\n It flickers on and off, on and off - why is it red. Your head hurts, your eyes hurt - everything is so weird. While you are rubbing your eyes - in hope to wake up more - and sitting up, you wonder what your name is. You cannot remember it. Why aren’t you able to remember it?\n" +
-            "\n" +
-            "Finally, you realize that the noise is a siren. It is loud but bearable. What does it mean?\n" +
-            "You feel awkward. Something isn’t right. The walls are metallic, there are a lot of scratches on it and you just know that you want to get out of this room. Still, you are also really tired and wonder if you should rest a bit first.\n" +
+    ROOM0("You are really, really tired, but your head hurts. It hurts as if someone hit you with an old rusty baseball bat. The loud noise around you doesn't help. " +
+            "\nThere is a moment, while you force yourself to open your eyes, where you wonder about your metaphors. There is a red light. " +
+            "\nIt flickers on and off, on and off - why is it red. Your head hurts, your eyes hurt - everything is so weird. While you are rubbing your eyes - in hope to wake up more - and sitting up, you wonder what your name is. You cannot remember it. Why aren’t you able to remember it?" +
+            "\nFinally, you realize that the noise is a siren. It is loud but bearable. What does it mean?" +
+            "\nYou feel awkward. Something isn’t right."),
+    ROOM1(" The walls are metallic, there are a lot of scratches on it and you just know that you want to get out of this room. Still, you are also really tired and wonder if you should rest a bit first.\n" +
             "\n" +
             "In front of you lies a sheet of dirty paper and a little plastic card. On your left there is a tiny old bed and to your right there is a door. \n" +
             "\n" +
