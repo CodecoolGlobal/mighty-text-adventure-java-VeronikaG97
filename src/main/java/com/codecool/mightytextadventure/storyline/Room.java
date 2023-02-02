@@ -4,11 +4,11 @@ public enum Room {
     ROOM1("You are really, really tired, but your head hurts. It hurts as if someone hit you with an old rusty baseball bat. The loud noise around you doesn't help. \n" +
             "There is a moment, while you force yourself to open your eyes, where you wonder about your metaphors." +
             "There is a red light.\n" +
-            "It flickers on and off, on and off - why is it red. Your head hurts, your eyes hurt - everything is so weird.\n" +
+            "It flickers on and off, on and off - tinting everything you see in a sickly, eerie glow. Your head hurts, your eyes hurt - everything is so weird.\n" +
             "While you are rubbing your eyes - in hope to wake up more - and sitting up, you wonder what your name is. You cannot remember it. \n" +
             "Why aren’t you able to remember it?\n" +
             "Finally, you realize that the noise is a siren. It is loud but bearable. What does it mean?\n" +
-            "You feel awkward. Something isn’t right.\n" +
+            "You feel as if in danger. Something isn’t right.\n" +
             "What do you want to do?\n"),
     ROOM2("As you enter the next room you have to put your hands on your ears. It is loud! The siren seems to come from this room and you need a while to get used to it.\n" +
             "The lights in this room are also shining red and flicker. What is wrong here?\n" +

@@ -75,6 +75,7 @@ public class Application {
                 "Room 1");
 
         room1[1] = new SubArea(
+                "Room 2"
                 sceneRoom2.getDescription(),
                 sceneKey.getDescription(),
                 "Room 2");
