@@ -26,11 +26,11 @@ public class Game {
     public void run() {
         boolean isRunning = true;
         while (isRunning) {
-            try {
+/*            try {*/
                 isRunning = step(); // if (winCon || loseCon) { isRunning =false}
-            } catch (Exception error) {
+/*            } catch (Exception error) {
                 display.printMessage("Please try again. Press h for help.");
-            }
+            }*/
 
         }
     }
@@ -43,6 +43,7 @@ public class Game {
         if(playerLocation.equals("Intro")){
             display.printMessage(areas[0].getScene());
             player.setLocation("Room 1");
+            return true;
         }
 
         String userInput = input.getInputFromUser();
@@ -52,30 +53,53 @@ public class Game {
 
         LogicProvider logic = new LogicProvider(playerLocation, areas, subAreas);
 
-        display.printMessage(String.valueOf(logic.getAreaIndex()));
+/*        display.printMessage("aaaa"+String.valueOf(logic.getAreaIndex()));
+        display.printMessage(String.valueOf(logic.isThingInRoom("testSub2")));
+        display.printMessage(String.valueOf(logic.getSubAreaIndex("testSub1")));
+        display.printMessage(String.valueOf(logic.getSubAreaIndex("testSub2")));*/
 
-        if(keyword.equalsIgnoreCase("Examine") && target.equalsIgnoreCase(" Room")){
-            for(int i = 0; i < areas.length; i++){
-                if(areas[i].getName().equals(playerLocation)){
-                    display.printMessage(areas[i].getScene());
+        if( keyword.equalsIgnoreCase("Examine") ){
+            if( target.equalsIgnoreCase(" Room") ){
+                for ( int i = 0; i < areas.length; i++ ) {
+                    if ( areas[i].getName().equals(playerLocation) ) {
+                        display.printMessage(areas[i].getScene());
+                    }
                 }
             }
-        } else if (keyword.equalsIgnoreCase("Examine")) {
-            if(target.equalsIgnoreCase(" "+"testSub1")) {
-                for (int i = 0; i < subAreas.length; i++){
+            else if(target.equalsIgnoreCase(" "+"testSub1") && logic.isThingInRoom("testSub1")) {
+                int subAreaIndex = logic.getSubAreaIndex("testSub1");
+                display.printMessage(subAreas[subAreaIndex].getScene());
+             /*   for (int i = 0; i < subAreas.length; i++){
                     if(subAreas[i].getName().equalsIgnoreCase("testSub1") && playerLocation.equalsIgnoreCase(subAreas[i].getLocation())){
                         display.printMessage(subAreas[i].getScene());
                     }
-                }
+                }*/
             }
-            else if(target.equalsIgnoreCase(" "+"testSub2")) {
-                for (int i = 0; i < subAreas.length; i++){
+            else if(target.equalsIgnoreCase(" "+"testSub2") && logic.isThingInRoom("testSub2")) {
+                int subAreaIndex = logic.getSubAreaIndex("testSub2");
+                display.printMessage(subAreas[subAreaIndex].getScene());
+
+/*                for (int i = 0; i < subAreas.length; i++){
                     if(subAreas[i].getName().equalsIgnoreCase("testSub2") && playerLocation.equalsIgnoreCase(subAreas[i].getLocation())){
                         display.printMessage(subAreas[i].getScene());
                     }
-                }
+                }*/
+            }
+            else if(target.equalsIgnoreCase(" "+"testSub1") && logic.isThingInRoom("testSub1")) {
+                int subAreaIndex = logic.getSubAreaIndex("testSub1");
+                display.printMessage(subAreas[subAreaIndex].getScene());
+            }
+            else{
+                display.printMessage("There's no such thing here.");
             }
         }
+        else if(keyword.equalsIgnoreCase("Go to")){
+
+        }
+
+
+
+
 
 
         for(int i = 0; i < areas.length; i++){
@@ -83,13 +107,13 @@ public class Game {
             String areaScene = areas[i].getScene();
 
             if (userInput.equalsIgnoreCase("Go " + areaName ) && playerLocation.equals(areaName) ){
-                display.printMessage("That's where you already are...you genius.");
+                display.printMessage("That's where you already are.");
                 break;
             }
             else if (userInput.equalsIgnoreCase("Go " + areaName) && !(playerLocation.equals(areaName)) ){
                 player.setLocation(areaName);
                 display.printMessage(areaScene);
-                break;
+                return true;
             }
 
         }

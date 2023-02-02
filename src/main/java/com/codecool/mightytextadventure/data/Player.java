@@ -3,11 +3,13 @@ package com.codecool.mightytextadventure.data;
 public class Player {
     String name;
     String location;
+    String subLocation;
     String[] inventory;
 
-    public Player(String name, String location, String[] inventory){
+    public Player(String name, String location, String subLocation, String[] inventory){
        this.name = name;
        this.location = location;
+       this.subLocation = subLocation;
        this.inventory = new String[2];
     }
 

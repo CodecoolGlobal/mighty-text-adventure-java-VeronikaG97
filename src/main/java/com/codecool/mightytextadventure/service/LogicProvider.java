@@ -16,13 +16,23 @@ public class LogicProvider {
 
 
     public int getAreaIndex () {
-        int result=0;
+        int areaResult = 0;
         for(int i = 0; i < areas.length; i++){
             if(areas[i].getName().equals(playerLocation)){
-                result = i;
+                areaResult = i;
             }
         }
-        return result;
+        return areaResult;
+    }
+
+    public int getSubAreaIndex(String thing){
+        int subAreaResult = 0;
+        for(int i = 0; i < subAreas.length; i++){
+            if(thing.equalsIgnoreCase(subAreas[i].getName())){
+                subAreaResult = i;
+            }
+        };
+        return subAreaResult;
     }
 
     public boolean isThingInRoom(String thing){

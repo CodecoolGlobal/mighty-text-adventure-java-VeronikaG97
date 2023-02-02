@@ -23,7 +23,7 @@ public class Application {
         inventory[0] = "";
         inventory[1] = "";
 
-        Player player = new Player("Test_Name", "Intro", inventory);
+        Player player = new Player("Test_Name", "Intro", "Center", inventory);
 
         player.setInventory("ID-Card");
         player.setInventory("Key");
@@ -44,7 +44,7 @@ public class Application {
         }
 
     private static Area[] loadAreas(){
-        Area[] areas =   new Area[7];
+        Area[] areas =   new Area[4];
 
         Room description0 = Room.ROOM0;
         Room description1 = Room.ROOM1;
@@ -53,7 +53,7 @@ public class Application {
 
 
         areas[0] = new Area("Intro", description0.getDescription(), new String[]{null});
-        areas[1] = new Area("Room 1", description1.getDescription(), new String[]{"testSub1", "testSub2"});
+        areas[1] = new Area("Room 1", description1.getDescription(), new String[]{null});
         areas[2] = new Area("Room 2", description2.getDescription(), new String[]{null});
         areas[3] = new Area("Room 3", description3.getDescription(), new String[]{null});
 
