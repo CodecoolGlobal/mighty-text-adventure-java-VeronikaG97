@@ -58,7 +58,7 @@ public class Application {
     }
     private static SubArea[] loadSubAreas(){
 
-        ArrayList[] roomContents = new ArrayList[7];
+        // ArrayList[] roomContents = new ArrayList[7];
 
 
         SubArea[] room1 = new SubArea[2];

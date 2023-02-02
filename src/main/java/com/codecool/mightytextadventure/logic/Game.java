@@ -22,13 +22,15 @@ public class Game {
         this.player = player;
     }
 
-
-
-
     public void run() {
         boolean isRunning = true;
         while (isRunning) {
-            isRunning = step(); // if (winCon || loseCon) { isRunning =false}
+            try {
+                isRunning = step(); // if (winCon || loseCon) { isRunning =false}
+            } catch (Exception error) {
+                display.printMessage("Please try again. Press h for help.");
+            }
+
         }
     }
 
@@ -43,9 +45,6 @@ public class Game {
         String userInput = input.getInputFromUser();
         String keyword = userInput.substring(0, userInput.indexOf(" "));
         String target = userInput.substring(userInput.indexOf((" ")));
-
-
-
 
         if(keyword.equalsIgnoreCase("Examine") && target.equalsIgnoreCase(" Room")){
             for(int i = 0; i < areas.length; i++){
@@ -85,9 +84,6 @@ public class Game {
             }
 
         }
-
-
-
         return true;
     }
 }
