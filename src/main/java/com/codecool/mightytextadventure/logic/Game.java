@@ -2,6 +2,7 @@ package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.data.SubArea;
+import com.codecool.mightytextadventure.storyline.Item;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 import com.codecool.mightytextadventure.data.Player;
@@ -28,9 +29,9 @@ public class Game {
             try {
                 isRunning = step(); // if (winCon || loseCon) { isRunning =false}
             } catch (Exception error) {
-                display.printMessage("Please try again. Press h for help.");
+                display.printMessage("Please try again.\n" +
+                        "Possible commands are: go ..., examine ...., take ...., sleep ....");
             }
-
         }
     }
 
@@ -39,7 +40,7 @@ public class Game {
         String playerLocation = player.getLocation();
 
         if(playerLocation.equals("Intro")){
-            display.printMessage(areas[0].getScene());
+            display.printMessage(areas[1].getScene());
             player.setLocation("Room 1");
         }
 
@@ -52,11 +53,11 @@ public class Game {
         if(keyword.equalsIgnoreCase("Examine") && target.equalsIgnoreCase(" Room")){
             for(int i = 0; i < areas.length; i++){
                 if(areas[i].getName().equals(playerLocation)){
-                    display.printMessage(areas[i].getScene());
+                    display.printMessage(Item.ROOM1.getDescription());
                 }
             }
         } else if (keyword.equalsIgnoreCase("Examine")) {
-            if(target.equalsIgnoreCase(" "+"testSub1")) {
+            if(target.equalsIgnoreCase(" "+"Bed")) {
                 for (int i = 0; i < subAreas.length; i++){
                     if(subAreas[i].getName().equalsIgnoreCase("testSub1") && playerLocation.equalsIgnoreCase(subAreas[i].getLocation())){
                         display.printMessage(subAreas[i].getScene());

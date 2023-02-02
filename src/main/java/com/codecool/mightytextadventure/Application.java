@@ -4,6 +4,7 @@ import com.codecool.mightytextadventure.data.Area;
 import com.codecool.mightytextadventure.data.Player;
 import com.codecool.mightytextadventure.data.SubArea;
 import com.codecool.mightytextadventure.logic.Game;
+import com.codecool.mightytextadventure.storyline.Item;
 import com.codecool.mightytextadventure.storyline.Room;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
@@ -28,7 +29,7 @@ public class Application {
         player.setInventory("ID-Card");
         player.setInventory("Key");
 
-        System.out.println(Arrays.toString(player.getInventory()));
+        //System.out.println(Arrays.toString(player.getInventory()));
         //END OF TEST Player
 
         display.printMessage("Starting Mighty Text Adventure!");
@@ -52,37 +53,31 @@ public class Application {
         Room description3 = Room.ROOM3;
 
 
-        areas[0] = new Area("Intro", description0.getDescription(), new String[]{null});
-        areas[1] = new Area("Room 1", description1.getDescription(), new String[]{"testSub1", "testSub2"});
-        areas[2] = new Area("Room 2", description2.getDescription(), new String[]{null});
-        areas[3] = new Area("Room 3", description3.getDescription(), new String[]{null});
+        areas[0] = new Area("Intro", description0.getDescription());
+        areas[1] = new Area("Room 1", description1.getDescription());
+        areas[2] = new Area("Room 2", description2.getDescription());
+        areas[3] = new Area("Room 3", description3.getDescription());
 
-        /*
-        areas[4] = new Area("Room 4", "Welcome to Room 4.", new String[]{null});
-        areas[5] = new Area("Room 5", "Welcome to Room 5.", new String[]{null});
-        areas[6] = new Area("Room 6", "Welcome to Room 6.", new String[]{null});
-        */
         return areas;
     }
     private static SubArea[] loadSubAreas(){
-
-        // ArrayList[] roomContents = new ArrayList[7];
-
-
         SubArea[] room1 = new SubArea[2];
+
+        Item sceneRoom1 = Item.ROOM1;
+        Item sceneBed = Item.BED;
+        Item sceneRoom2 = Item.ROOM2;
+        Item sceneKey = Item.KEY;
+
+
         room1[0] = new SubArea(
-                "testSub1",
-                "It's a delicious looking Footlong Sandwich from Subway!!!" +
-                "\nIt's exquisite scent would be mouthwatering, " +
-                "\nwere it not for stench coming from somewhere around here...", "Room 1");
+                "Room 1",
+                sceneRoom1.getDescription(),
+                "Room 1");
 
         room1[1] = new SubArea(
-                "testSub2",
-                "It seems to have been a meatball sub once. " +
-                "\nNow it's teeming with life best left undescribed, " +
-                "\nspreading a vomit inducing stench.", "Room 2");
-
-        //roomContents[0] = room1;
+                sceneRoom2.getDescription(),
+                sceneKey.getDescription(),
+                "Room 2");
         return room1;
     }
 }

@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cef0a1c-a635-4473-97f7-69b6eb5d47f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/storyline/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Room.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="movement" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -86,6 +94,8 @@
       <workItem from="1675178744504" duration="1440000" />
       <workItem from="1675240332833" duration="12196000" />
       <workItem from="1675265278203" duration="12176000" />
+      <workItem from="1675357693514" duration="1896000" />
+      <workItem from="1675359738567" duration="3193000" />
     </task>
     <servers />
   </component>
