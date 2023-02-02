@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cef0a1c-a635-4473-97f7-69b6eb5d47f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/SubArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/AreaEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/AreaEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/data/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/mightytextadventure/ui/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Area.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/AreaEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/AreaEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/data/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/ui/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/ui/Input.class" afterDir="false" />
     </list>
@@ -30,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,6 +87,7 @@
       <workItem from="1675152513243" duration="18474000" />
       <workItem from="1675178744504" duration="1440000" />
       <workItem from="1675240332833" duration="12196000" />
+      <workItem from="1675265278203" duration="12176000" />
     </task>
     <servers />
   </component>
