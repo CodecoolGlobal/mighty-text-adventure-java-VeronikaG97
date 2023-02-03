@@ -3,7 +3,7 @@ public enum Room {
 
     ROOM0("You wake up, and your head hurts. \n" +
             "It hurts as if someone hit you with an old rusty baseball bat wrapped in lemon peels, and the loud noise around you doesn't help matters much. \n" +
-            "For a moment, while forcing yourself to get up, you wonder about the weirdness your comparisons." +
+            "For a moment, while forcing yourself to get up, you wonder about the weirdness of your comparisons." +
             "The first thing you notice is a red light.\n" +
             "It flickers on and off, on and off - in concert with the noise, painting everything you see in a sickly, eerie glow. Your head hurts, your eyes hurt...everything hurts.\n" +
             "Rubbing something worse than sleep out of your eyes, you sit up and ... wonder what your name is. You can not remember it. \n" +
@@ -16,7 +16,7 @@ public enum Room {
             "Looking around, you actually notice a BED on the left side of the room that would facilitate this.\n" +
             "However, there is also door to your right. It is slightly ajar; beckoning, yet full of potential danger.\n"
             ),
-    ROOM2("It's sou loud ou have to put your hands on your ears.\n" +
+    ROOM2("It's so loud you have to put your hands on your ears.\n" +
             "The siren started up again, with this room being the source of the (by now quite unpleasant) noise.\n" +
             "The lights in this room are also shining red and flicker. What is wrong here?\n" +
             "You look around and nearly scream. There on your right side are some astronaut suits, “staring” at you. And not only that, you could swear one of them actually moved their finger a bit!\n" +

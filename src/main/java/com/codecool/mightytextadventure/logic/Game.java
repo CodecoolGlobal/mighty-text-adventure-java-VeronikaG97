@@ -30,7 +30,7 @@ public class Game {
         boolean isRunning = true;
         while (isRunning) {
             try {
-                isRunning = step(); // if (winCon || loseCon) { isRunning =false}
+                isRunning = step();
             } catch (Exception error) {
                 display.printMessage("Invalid Input. Try typing GO ROOM 1  or GO ROOM 2 to switch rooms, or EXAMINE <something> !");
             }
@@ -39,9 +39,7 @@ public class Game {
     }
 
     private boolean step() {
-
         String playerLocation = player.getLocation();
-
 
         if(playerLocation.equals("Intro")){
             display.printMessage(areas[0].getScene());
