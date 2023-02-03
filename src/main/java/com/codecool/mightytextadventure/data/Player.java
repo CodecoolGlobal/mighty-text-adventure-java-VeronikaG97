@@ -1,29 +1,29 @@
 package com.codecool.mightytextadventure.data;
 
-import java.lang.reflect.Array;
-
 public class Player {
     String name;
     String location;
+    String subLocation;
     String[] inventory;
 
-    public Player(String name, String location, String[] inventory){
+    public Player(String name, String location, String subLocation, String[] inventory){
        this.name = name;
        this.location = location;
-       this.inventory = new String[2];
+       this.subLocation = subLocation;
+       this.inventory = inventory;
     }
 
     public void setName(String newName) {
         this.name = newName;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocation(String newLocation) {
+        this.location = newLocation;
     }
 
     public void setInventory(String item) {
         for (int i = 0; i < inventory.length; i++){
-            if (this.inventory[i] == null) {
+            if (this.inventory[i].equals(" ")) {
                 this.inventory[i] = item;
                 break;
             }
@@ -40,5 +40,14 @@ public class Player {
 
     public String[] getInventory() {
         return this.inventory;
+    }
+    public boolean hasKey() {
+        boolean playerHasKey= false;
+        for(int i= 0; i< inventory.length; i++){
+            if (inventory[i].equalsIgnoreCase("Key")) {
+                playerHasKey = true;
+            }
+        }
+        return playerHasKey;
     }
 }
