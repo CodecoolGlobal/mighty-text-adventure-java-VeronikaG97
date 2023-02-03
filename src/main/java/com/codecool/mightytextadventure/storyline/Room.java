@@ -22,7 +22,8 @@ public enum Room {
             "You look around and nearly scream. There on your right side are some astronaut suits, “staring” at you. And not only that, you could swear one of them actually moved their finger a bit!\n" +
             "You take a deep breath. Spacesuits moving on their own is impossible, so there is just no way this one could have.\n" +
             "\"No, no, no, this is silly. You're probably just paranoid to cope with this situation somehow. You shouldn’t be scared! Get yourself together!\n" +
-            "The siren is surely a false alarm and someone will fix it soon.\" Or so you keep telling yourself, to keep from freaking out.\n"),
+            "The siren is surely a false alarm and someone will fix it soon.\" Or so you keep telling yourself, to keep from freaking out.\n" +
+            "Still, there is hope. You see a DOOR - it might lead out of here. Better EXAMINE that..."),
     ROOM3("Hell YEAH, you're OUT! For a second you thought you might die in there..." +
             "\nBut it seems like the other side of the door is no picnic either: As you exit, a frigid wind carrying snowflakes immediately chills you to the bones." +
             "\nIt is not just cold, it's freezing. Not to shiver is not an option." +

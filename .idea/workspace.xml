@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cef0a1c-a635-4473-97f7-69b6eb5d47f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/mightytextadventure/storyline/Room.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="development" />
+        <entry key="$PROJECT_DIR$" value="movement" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
