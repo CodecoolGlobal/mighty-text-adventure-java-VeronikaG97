@@ -10,7 +10,7 @@ public class Player {
        this.name = name;
        this.location = location;
        this.subLocation = subLocation;
-       this.inventory = new String[2];
+       this.inventory = inventory;
     }
 
     public void setName(String newName) {
@@ -23,7 +23,7 @@ public class Player {
 
     public void setInventory(String item) {
         for (int i = 0; i < inventory.length; i++){
-            if (this.inventory[i] == null) {
+            if (this.inventory[i].equals(" ")) {
                 this.inventory[i] = item;
                 break;
             }
@@ -40,5 +40,14 @@ public class Player {
 
     public String[] getInventory() {
         return this.inventory;
+    }
+    public boolean hasKey() {
+        boolean playerHasKey= false;
+        for(int i= 0; i< inventory.length; i++){
+            if (inventory[i].equalsIgnoreCase("Key")) {
+                playerHasKey = true;
+            }
+        }
+        return playerHasKey;
     }
 }

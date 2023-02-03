@@ -17,22 +17,9 @@ public class Application {
     public static void main(String[] args) {
         Display display = new Display();
         Input input = new Input();
+        Player player = new Player("Test_Name", "Intro", "Center", new String[]{" ", " "});
 
-
-        // TEST Player
-        String[] inventory = new String[2];
-        inventory[0] = "";
-        inventory[1] = "";
-
-        Player player = new Player("Test_Name", "Intro", "Center", inventory);
-
-        player.setInventory("ID-Card");
-        player.setInventory("Key");
-
-        //System.out.println(Arrays.toString(player.getInventory()));
-        //END OF TEST Player
-
-        display.printMessage("Starting Mighty Text Adventure!");
+        display.printMessage("Starting Zombie Adventure: The Room-ening 2 - Unholy Hangover! Director's Cut Remastered");
 
         Area[] areas = loadAreas();
         SubArea[] subAreas = loadSubAreas();
@@ -41,7 +28,8 @@ public class Application {
 
         game.run();
 
-        display.printMessage("Exiting from Mighty Text Adventure!");
+        display.printMessage("Thank you for playing Zombie Adventure: The Room-ening 2 - Unholy Hangover! Director's Cut Remastered " +
+                "\nWe hope you had fun!");
         }
 
     private static Area[] loadAreas(){
@@ -62,24 +50,25 @@ public class Application {
         return areas;
     }
     private static SubArea[] loadSubAreas(){
-        SubArea[] room1 = new SubArea[2];
+        SubArea[] items = new SubArea[3];
 
-        Item sceneRoom1 = Item.ROOM1;
+        Item sceneDoor = Item.DOOR;
         Item sceneBed = Item.BED;
-        Item sceneRoom2 = Item.ROOM2;
         Item sceneKey = Item.KEY;
 
 
-        room1[0] = new SubArea(
-                "Room 1",
-                sceneRoom1.getDescription(),
+        items[0] = new SubArea(
+                "Bed",
+                sceneBed.getDescription(),
                 "Room 1");
-
-        room1[1] = new SubArea(
-                "Room 2"
-                sceneRoom2.getDescription(),
+        items[1] = new SubArea(
+                "Key",
                 sceneKey.getDescription(),
                 "Room 2");
-        return room1;
+        items[2] = new SubArea(
+                "Door1",
+                sceneDoor.getDescription(),
+                "Room 2");
+        return items;
     }
 }

@@ -22,4 +22,6 @@ public class SubArea {
 
     public String getLocation() { return location; }
 
+    public void setLocation(String newLocation) { this.location = newLocation; }
+
 }
